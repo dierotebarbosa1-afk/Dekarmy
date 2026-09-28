@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dekarmy | Bonecos 3D pintados à mão</title>
+<meta name="description" content="Bonecos impressos em 3D e pintados à mão. Fantasia, games e peças personalizadas.">
+<link rel="icon" href="logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <a href="#topo" class="brand" aria-label="Dekarmy"></a>
+  <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  <nav id="menu">
+    <a href="#trabalhos">Nossos trabalhos</a>
+    <a href="#processo">Como fazemos</a>
+    <a href="#personalizado">Personalizados</a>
+    <a href="#contato" class="pill">Fale conosco</a>
+  </nav>
+</header>
+
+<main id="topo">
+  <section class="hero">
+    <img class="hero-logo" src="logo.jpg" alt="Dekarmy – logo">
+    <h1>Bonecos impressos em 3D, pintados à mão e personalizados</h1>
+    <p>Cada peça nasce na impressora e ganha vida no pincel. Fantasia, games e o herói que só você imaginou.</p>
+    <div class="hero-cta">
+      <a class="btn" href="#trabalhos">Ver trabalhos</a>
+      <a class="btn ghost" href="#personalizado">Quero um personalizado</a>
+    </div>
+  </section>
+
+  <section id="trabalhos" class="section">
+    <h2>Nossos trabalhos</h2>
+    <p class="lead">Algumas peças que já fizemos. Toque na foto para ampliar.</p>
+    <div class="filters" id="filters">
+      <button class="on" data-f="todos">Todos</button>
+      <button data-f="pintado">Pintados à mão</button>
+      <button data-f="colorido">Impressos já coloridos</button>
+      <button data-f="personalizado">Personalizados e criações próprias</button>
+    </div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section id="processo" class="section alt">
+    <h2>Como fazemos</h2>
+    <ol class="steps">
+      <li><span class="ico">📐</span><h3>Modelagem</h3><p>Escolhemos ou criamos o modelo digital com todos os detalhes.</p></li>
+      <li><span class="ico">🖨️</span><h3>Impressão 3D</h3><p>A peça é impressa camada por camada, com acabamento e lixa.</p></li>
+      <li><span class="ico">🎨</span><h3>Pintura à mão</h3><p>Cada boneco é pintado com pincel, então nenhum sai igual ao outro.</p></li>
+    </ol>
+  </section>
+
+  <section id="personalizado" class="section">
+    <div class="custom">
+      <div>
+        <h2>Seu personagem, do seu jeito</h2>
+        <p>Mande uma foto, um desenho ou só a ideia. Montamos o boneco do seu personagem de RPG, do seu pet ou daquele presente especial.</p>
+      </div>
+      <form id="form" class="form">
+        <label>Seu nome<input name="nome" required></label>
+        <label>Descreva o boneco<textarea name="msg" rows="4" required></textarea></label>
+        <button class="btn" type="submit">Enviar pelo WhatsApp</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer id="contato" class="footer">
+  <div class="brand"></div>
+  <p>Bonecos 3D pintados à mão.</p>
+  <ul class="contatos">
+    <li><a href="#" id="wpp" target="_blank" rel="noopener">WhatsApp: (62) 99408-8097</a></li>
+    <li><a href="#" id="insta" target="_blank" rel="noopener">Instagram: @_dekarmy_</a></li>
+  </ul>
+  <small>© <span id="ano"></span> Dekarmy. Todos os direitos reservados.</small>
+</footer>
+<div class="lightbox" id="lightbox" hidden><button aria-label="Fechar">✕</button><img alt=""></div>
+
+<script src="script.js"></script>
+</body>
+</html>
